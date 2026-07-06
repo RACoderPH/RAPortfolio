@@ -7,34 +7,28 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'syne': ['Syne', 'sans-serif'],
-        'dm-sans': ['DM Sans', 'sans-serif'],
+        'display': ['IBM Plex Serif', 'serif'],
+        'mono': ['IBM Plex Mono', 'monospace'],
+        'sans': ['IBM Plex Sans', 'sans-serif'],
       },
       colors: {
-        'bg': '#0a0a0a',
-        'bg-2': '#111111',
-        'bg-3': '#161616',
-        'accent': '#00d4ff',
-        'accent2': '#a855f7',
-        'accent3': '#f59e0b',
-        'text': '#f1f5f9',
-        'text-muted': '#64748b',
-        'text-dim': '#94a3b8',
-      },
-      animation: {
-        'float': 'float 6s ease-in-out infinite',
-        'float-reverse': 'float-reverse 8s ease-in-out infinite',
+        'paper': '#EAEFEE',
+        'paper-2': '#F5F7F6',
+        'ink': '#10222B',
+        'ink-soft': '#4B5C63',
+        'line': '#1D4E89',
+        'line-soft': 'rgba(29,78,137,0.28)',
+        'accent': '#FF5A1F',
+        'accent-soft': 'rgba(255,90,31,0.10)',
       },
       keyframes: {
-        float: {
-          '0%, 100%': { transform: 'translate(0, 0)' },
-          '50%': { transform: 'translate(30px, -30px)' },
+        dash: {
+          to: { strokeDashoffset: '-24' },
         },
-        'float-reverse': {
-          '0%, 100%': { transform: 'translate(0, 0)' },
-          '50%': { transform: 'translate(-30px, 30px)' },
-        }
-      }
+      },
+      animation: {
+        dash: 'dash 2.4s linear infinite',
+      },
     },
   },
   plugins: [],
